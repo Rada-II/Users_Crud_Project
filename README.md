@@ -1,5 +1,5 @@
 checkout live:
-users-crud-project-pppbzgkrl-rada-ii.vercel.app
+https://users-crud-project.vercel.app/
 
 # Getting Started with Create React App
 
