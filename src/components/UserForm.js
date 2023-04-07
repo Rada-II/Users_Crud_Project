@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function UserForm({ user, onSubmit }) {
-  const [name, setName] = useState(`${user.name.first} ${user.name.last}`);
+  const [name, setName] = useState(`${user.first_name} ${user.last_name}`);
   const [email, setEmail] = useState(user.email);
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
@@ -15,8 +15,8 @@ function UserForm({ user, onSubmit }) {
       setEmailError("Email is required");
     }
     if (name && email) {
-      const res = await fetch("https://randomuser.me/api", {
-        method: "POST",
+      const res = await fetch(`https://reqres.in/api/users/${user.id}`, {
+        method: "PUT",
         body: JSON.stringify({ name, email }),
         headers: { "Content-Type": "application/json" },
       });

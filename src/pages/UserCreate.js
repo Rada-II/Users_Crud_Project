@@ -31,7 +31,7 @@ function UserCreate() {
     }
 
     const data = { name, email };
-    fetch("/api/users", {
+    fetch("https://reqres.in/api/users/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -46,7 +46,7 @@ function UserCreate() {
         <h2>Create User</h2>
       </div>
       <UserForm
-        user={{ name: { first: "", last: "" }, email: "" }}
+        user={{ name: "", email: "" }}
         onSubmit={handleSubmit}
         onNameChange={handleNameChange}
         onEmailChange={handleEmailChange}

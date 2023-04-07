@@ -1,13 +1,21 @@
 import React from "react";
+// import styles from "./Footer.module.css";
 
-function Footer() {
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  const currentMonth = new Date().toLocaleString("en-US", { month: "long" });
+
   return (
-    <div className="footer">
-      <div className="container-foot">
-        <p className="foot">&copy; Copyright BIT By Radmila Ivankovic</p>
+    <footer>
+      <div className="footer">
+        <div className="foot">
+          <p>
+            &copy; {currentMonth} {currentYear} BIT By Radmila Ivankovic
+          </p>
+        </div>
       </div>
-    </div>
+    </footer>
   );
-}
+};
 
 export default Footer;

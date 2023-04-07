@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import UserCreate from "./pages/UserCreate";
 import UserEdit from "./pages/UserEdit";
 import UserList from "./pages/UserList";
@@ -15,9 +15,9 @@ function App() {
 
         <Routes>
           <Route path="/users" element={<UserList />} />
-          <Route path="/users/create" element={<UserCreate />} />
-          <Route path="/users/:id" element={<UserDetail />} />
-          <Route path="/users/:id/edit" element={<UserEdit />} />
+          <Route path="/user/create" element={<UserCreate />} />
+          <Route path="/user/:id" element={<UserDetail />} />
+          <Route path="/user/:id/edit" element={<UserEdit />} />
           <Route path="/" element={<UserList />} />
         </Routes>
         <Footer />

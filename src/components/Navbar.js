@@ -9,7 +9,7 @@ function Navbar() {
           <Link to="/users">Users</Link>
         </li>
         <li>
-          <Link to="/users/create">Create User</Link>
+          <Link to="/user/create">Create User</Link>
         </li>
       </ul>
     </nav>
