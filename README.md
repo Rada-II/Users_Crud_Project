@@ -1,13 +1,21 @@
 checkout live:
 https://users-crud-project.vercel.app/
 
+#
+This is simple React app that fetches data from API endpoint, that preforms CRUD operations.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
+### `npm i`
+or
+### `npm install`
 In the project directory, you can run:
+
+### `npm start`
 
 ### `npm start`
 
