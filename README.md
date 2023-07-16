@@ -2,7 +2,7 @@ checkout live:
 https://users-crud-project.vercel.app/
 
 #
-This is simple React app that fetches data from API endpoint, that preforms CRUD operations.
+This is a simple React app that fetches data from API endpoint, that preforms CRUD operations.
 
 
 # Getting Started with Create React App
